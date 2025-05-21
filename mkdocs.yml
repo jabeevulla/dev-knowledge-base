@@ -1,1 +1,45 @@
-site_name: My Docs
+site_name: Jabeevulla | Software Engineer & Architect
+site_url: https://jabeevulla.github.io/dev-knowledge-base/
+repo_url: https://github.com/jabeevulla/dev-knowledge-base
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.instant
+    - search.suggest
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: deep orange
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - 🏠 Home: index.md
+  - 📄 Resume: resume.md
+  - 📚 Knowledge Base:
+   #   - IAM & Security:
+    #      - IAM Journey: knowledge/iam/iam-journey.md
+   #       - ForgeRock Notes: knowledge/iam/forgerock.md
+      - Cloud & DevOps:
+          - Azure DevOps: knowledge/devops/azure-devops.md
+   #       - Terraform: knowledge/devops/terraform.md
+      - Java & Backend:
+          - Spring Boot: knowledge/backend/spring-boot.md
+    #      - Kafka Patterns: knowledge/backend/kafka.md
+      - T24 & Banking:
+          - T24 Overview: knowledge/t24/t24-overview.md
+          - SVN to Azure DevOps: knowledge/t24/svn-migration.md
+  - 📚 Cheatsheets:
+      - Overview: cheatsheets/index.md
+      - Spring Boot: cheatsheets/spring-boot.md
+      - Azure DevOps: cheatsheets/azure-devops.md
+  - 🧠 Skills:
+      - Overview: skills/index.md
+   #   - IAM Journey: skills/iam-journey.md
+  - 🚀 Projects:
+    - Overview: projects/index.md
+   # - ForgeRock Migration: projects/forgerock-migration.md

@@ -1,41 +1,20 @@
-site_name: Jabeevulla | Hands-on Engineer & Architect
-theme:
-  name: material
-  features:
-    - navigation.instant
-    - navigation.sections
-    - navigation.top
-    - search.suggest
-    - search.highlight
-    - content.code.copy
-    - content.tabs.link
-  palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: indigo
-      accent: deep orange
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: indigo
-      accent: deep orange
-markdown_extensions:
-  - admonition
-  - codehilite
-  - footnotes
-  - meta
-  - toc:
-      permalink: true
-repo_url: https://github.com/jabeevulla/dev-knowledge-base
-edit_uri: ""
-nav:
-  - Home: index.md
-  - Resume: resume.md
-  - Projects:
-      - Overview: projects/index.md
-      - Rasois App: projects/rasois-app.md
-  - Cheatsheets:
-      - Spring Boot: cheatsheets/spring-boot.md
-  - Handbooks:
-      - Azure DevOps: handbooks/azure-devops.md
-  - Skills:
-      - IAM Migration: skills/iam-migration.md
+# 👋 Hello, I'm Jabeevulla
+
+**Hands-on Software Engineer & Architect**  
+💡 Specializing in Identity, Cloud, Microservices, and AI-Powered Architectures  
+📍 Based in London, working globally
+
+---
+
+## 🧠 About Me
+With 14+ years of experience, I lead and deliver digital transformation projects for banks and enterprises. I design secure, resilient architectures, drive IAM migrations, and explore AI agent integrations.
+
+---
+## 🔍 Explore My Work
+- 📚 [Knowledge Base](knowledge/index.md)
+- 🚀 [Projects](projects/index.md)
+- 🧠 [Skills Overview](skills/index.md)
+  
+---
+
+📄 [View My Resume](resume.md) | [GitHub](https://github.com/jabeevulla) | [LinkedIn](https://linkedin.com/in/jabeevulla)

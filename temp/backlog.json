@@ -1,0 +1,584 @@
+[
+  {
+    "fields": {
+      "System.Title": "Modernize SCM & Change Management for T24 \u2013 POC",
+      "System.WorkItemType": "Epic"
+    }
+  },
+  {
+    "fields": {
+      "System.Title": "Repository Migration & Git Setup",
+      "System.WorkItemType": "Feature"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:1"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Assess current SVN repository structure",
+      "System.WorkItemType": "User Story"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:2"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Inventory existing SVN repositories for T24 artefact",
+      "System.WorkItemType": "Task"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:3"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Identify dependencies, branching patterns, and exportable content",
+      "System.WorkItemType": "Task"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:3"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Document challenges with SVN for visibility in POC demo",
+      "System.WorkItemType": "Task"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:3"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Create Azure Repo and initialize Git baseline",
+      "System.WorkItemType": "User Story"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:2"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Setup Azure Repo under new DevOps project",
+      "System.WorkItemType": "Task"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:7"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Migrate code from SVN to Git using git-svn or export method",
+      "System.WorkItemType": "Task"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:7"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Commit with linked Work Items to show traceability",
+      "System.WorkItemType": "Task"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:7"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Establish Git standards and pull request workflows",
+      "System.WorkItemType": "User Story"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:2"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Configure branch policies (reviewers, checks)",
+      "System.WorkItemType": "Task"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:11"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Add .gitignore, README.md, and contribution guidelines",
+      "System.WorkItemType": "Task"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:11"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Demonstrate a sample PR with policy enforcement",
+      "System.WorkItemType": "Task"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:11"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "CI/CD Pipeline & On-Prem Agent",
+      "System.WorkItemType": "Feature"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:1"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Set up on-prem DevOps agent",
+      "System.WorkItemType": "User Story"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:15"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Install DevOps agent on on-prem server",
+      "System.WorkItemType": "Task"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:16"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Register agent and test connectivity",
+      "System.WorkItemType": "Task"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:16"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Secure agent using outbound-only configuration",
+      "System.WorkItemType": "Task"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:16"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Implement CI pipeline for T24 artefact",
+      "System.WorkItemType": "User Story"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:15"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Define pipeline YAML for TAFJ artefact",
+      "System.WorkItemType": "Task"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:20"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Add steps to publish pipeline artifacts",
+      "System.WorkItemType": "Task"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:20"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Validate build logs and traceability",
+      "System.WorkItemType": "Task"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:20"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Secure pipeline with variable groups and Key Vault",
+      "System.WorkItemType": "User Story"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:15"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Create variable group with secrets",
+      "System.WorkItemType": "Task"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:24"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Integrate Key Vault for credentials",
+      "System.WorkItemType": "Task"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:24"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Validate secret injection security",
+      "System.WorkItemType": "Task"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:24"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Change Management & Azure Boards Setup",
+      "System.WorkItemType": "Feature"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:1"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Structure Azure Boards with Work Item hierarchy",
+      "System.WorkItemType": "User Story"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:28"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Define Epic > Feature > Story > Task model",
+      "System.WorkItemType": "Task"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:29"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Customize workflows (New \u2192 Active \u2192 Done)",
+      "System.WorkItemType": "Task"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:29"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Setup Area/Iteration paths for T24",
+      "System.WorkItemType": "Task"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:29"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Link development activity to change requests",
+      "System.WorkItemType": "User Story"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:28"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Link commits to Work Items",
+      "System.WorkItemType": "Task"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:33"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Link PRs to stories and validate auto-trace",
+      "System.WorkItemType": "Task"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:33"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Demonstrate end-to-end traceability",
+      "System.WorkItemType": "Task"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:33"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Optional \u2013 QA & Test Plan Integration",
+      "System.WorkItemType": "Feature"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:1"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Create test plan for T24 artefact deployment",
+      "System.WorkItemType": "User Story"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:37"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Define manual test cases for deployment",
+      "System.WorkItemType": "Task"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:38"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Link test cases to user stories",
+      "System.WorkItemType": "Task"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:38"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Demonstrate test execution and reporting",
+      "System.WorkItemType": "Task"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:38"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Governance, Reporting & Demo",
+      "System.WorkItemType": "Feature"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:1"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Set up reporting dashboard",
+      "System.WorkItemType": "User Story"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:42"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Add burndown chart, sprint summary",
+      "System.WorkItemType": "Task"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:43"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Add queries for work traceability",
+      "System.WorkItemType": "Task"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:43"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Validate and present audit trail",
+      "System.WorkItemType": "User Story"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:42"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Show commit logs with ticket references",
+      "System.WorkItemType": "Task"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:46"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Show PR approvals and history",
+      "System.WorkItemType": "Task"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:46"
+      }
+    ]
+  },
+  {
+    "fields": {
+      "System.Title": "Export logs/test results for audit",
+      "System.WorkItemType": "Task"
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "#WorkItemRef:46"
+      }
+    ]
+  }
+]

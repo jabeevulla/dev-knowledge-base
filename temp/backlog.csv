@@ -1,0 +1,50 @@
+Title,Work Item Type,Parent,Tags
+Modernize SCM & Change Management for T24 – POC,Epic,,POC; GitMigration; AzureBoards; DevOps
+Repository Migration & Git Setup,Feature,Modernize SCM & Change Management for T24 – POC,POC; GitMigration
+Assess current SVN repository structure,User Story,Repository Migration & Git Setup,POC
+Inventory existing SVN repositories for T24 artefact,Task,Assess current SVN repository structure,POC
+"Identify dependencies, branching patterns, and exportable content",Task,Assess current SVN repository structure,POC
+Document challenges with SVN for visibility in POC demo,Task,Assess current SVN repository structure,POC
+Create Azure Repo and initialize Git baseline,User Story,Repository Migration & Git Setup,POC
+Setup Azure Repo under new DevOps project,Task,Create Azure Repo and initialize Git baseline,POC
+Migrate code from SVN to Git using git-svn or export method,Task,Create Azure Repo and initialize Git baseline,POC
+Commit with linked Work Items to show traceability,Task,Create Azure Repo and initialize Git baseline,POC
+Establish Git standards and pull request workflows,User Story,Repository Migration & Git Setup,POC
+"Configure branch policies (reviewers, checks)",Task,Establish Git standards and pull request workflows,POC
+"Add .gitignore, README.md, and contribution guidelines",Task,Establish Git standards and pull request workflows,POC
+Demonstrate a sample PR with policy enforcement,Task,Establish Git standards and pull request workflows,POC
+CI/CD Pipeline & On-Prem Agent,Feature,Modernize SCM & Change Management for T24 – POC,POC; GitMigration
+Set up on-prem DevOps agent,User Story,CI/CD Pipeline & On-Prem Agent,POC
+Install DevOps agent on on-prem server,Task,Set up on-prem DevOps agent,POC
+Register agent and test connectivity,Task,Set up on-prem DevOps agent,POC
+Secure agent using outbound-only configuration,Task,Set up on-prem DevOps agent,POC
+Implement CI pipeline for T24 artefact,User Story,CI/CD Pipeline & On-Prem Agent,POC
+Define pipeline YAML for TAFJ artefact,Task,Implement CI pipeline for T24 artefact,POC
+Add steps to publish pipeline artifacts,Task,Implement CI pipeline for T24 artefact,POC
+Validate build logs and traceability,Task,Implement CI pipeline for T24 artefact,POC
+Secure pipeline with variable groups and Key Vault,User Story,CI/CD Pipeline & On-Prem Agent,POC
+Create variable group with secrets,Task,Secure pipeline with variable groups and Key Vault,POC
+Integrate Key Vault for credentials,Task,Secure pipeline with variable groups and Key Vault,POC
+Validate secret injection security,Task,Secure pipeline with variable groups and Key Vault,POC
+Change Management & Azure Boards Setup,Feature,Modernize SCM & Change Management for T24 – POC,POC; GitMigration
+Structure Azure Boards with Work Item hierarchy,User Story,Change Management & Azure Boards Setup,POC
+Define Epic > Feature > Story > Task model,Task,Structure Azure Boards with Work Item hierarchy,POC
+Customize workflows (New → Active → Done),Task,Structure Azure Boards with Work Item hierarchy,POC
+Setup Area/Iteration paths for T24,Task,Structure Azure Boards with Work Item hierarchy,POC
+Link development activity to change requests,User Story,Change Management & Azure Boards Setup,POC
+Link commits to Work Items,Task,Link development activity to change requests,POC
+Link PRs to stories and validate auto-trace,Task,Link development activity to change requests,POC
+Demonstrate end-to-end traceability,Task,Link development activity to change requests,POC
+Optional – QA & Test Plan Integration,Feature,Modernize SCM & Change Management for T24 – POC,POC; GitMigration
+Create test plan for T24 artefact deployment,User Story,Optional – QA & Test Plan Integration,POC
+Define manual test cases for deployment,Task,Create test plan for T24 artefact deployment,POC
+Link test cases to user stories,Task,Create test plan for T24 artefact deployment,POC
+Demonstrate test execution and reporting,Task,Create test plan for T24 artefact deployment,POC
+"Governance, Reporting & Demo",Feature,Modernize SCM & Change Management for T24 – POC,POC; GitMigration
+Set up reporting dashboard,User Story,"Governance, Reporting & Demo",POC
+"Add burndown chart, sprint summary",Task,Set up reporting dashboard,POC
+Add queries for work traceability,Task,Set up reporting dashboard,POC
+Validate and present audit trail,User Story,"Governance, Reporting & Demo",POC
+Show commit logs with ticket references,Task,Validate and present audit trail,POC
+Show PR approvals and history,Task,Validate and present audit trail,POC
+Export logs/test results for audit,Task,Validate and present audit trail,POC

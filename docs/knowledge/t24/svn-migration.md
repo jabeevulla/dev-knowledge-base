@@ -28,6 +28,7 @@ Ensure you have the following ready before starting:
 | Temenos Design Studio | T24 artefact development | [Temenos Partner Portal](https://community.temenos.com/s/) |
 | Azure DevOps Agent (optional) | Run pipelines locally or on-prem | [Install Agent](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows) |
 | Azure DevOps Account | Host Git repos, pipelines, boards | [dev.azure.com](https://dev.azure.com) |
+| Java SDK  | Compile Java-based TAFJ artefacts | [] |
 
 ---
 

@@ -8,26 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://jabeevulla.github.io/dev-knowledge-base/">
+        <link rel="canonical" href="https://jabeevulla.github.io/dev-knowledge-base/knowledge/t24/svn-migration/">
       
       
+        <link rel="prev" href="../t24-overview/">
       
-        <link rel="next" href="resume/">
+      
+        <link rel="next" href="../../../skills/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>Jabeevulla | Software Engineer & Architect</title>
+        <title>SVN to Azure DevOps - Jabeevulla | Software Engineer & Architect</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -72,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#hello-im-jabeevulla" class="md-skip">
+        <a href="#migrating-t24-artefacts-from-svn-to-git-using-azure-devops" class="md-skip">
           Skip to content
         </a>
       
@@ -88,7 +90,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Jabeevulla | Software Engineer &amp; Architect" class="md-header__button md-logo" aria-label="Jabeevulla | Software Engineer & Architect" data-md-component="logo">
+    <a href="../../.." title="Jabeevulla | Software Engineer &amp; Architect" class="md-header__button md-logo" aria-label="Jabeevulla | Software Engineer & Architect" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -108,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🏠 Home
+              SVN to Azure DevOps
             
           </span>
         </div>
@@ -212,7 +214,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Jabeevulla | Software Engineer &amp; Architect" class="md-nav__button md-logo" aria-label="Jabeevulla | Software Engineer & Architect" data-md-component="logo">
+    <a href="../../.." title="Jabeevulla | Software Engineer &amp; Architect" class="md-nav__button md-logo" aria-label="Jabeevulla | Software Engineer & Architect" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -239,32 +241,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    🏠 Home
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -275,44 +255,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#about-me" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧠 About Me
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#explore-my-work" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔍 Explore My Work
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -324,7 +266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="resume/" class="md-nav__link">
+      <a href="../../../resume/" class="md-nav__link">
         
   
   
@@ -343,8 +285,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -355,11 +299,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -375,7 +319,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             📚 Knowledge Base
@@ -429,7 +373,7 @@
   
   
     <li class="md-nav__item">
-      <a href="knowledge/devops/azure-devops/" class="md-nav__link">
+      <a href="../../devops/azure-devops/" class="md-nav__link">
         
   
   
@@ -500,7 +444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="knowledge/backend/spring-boot/" class="md-nav__link">
+      <a href="../../backend/spring-boot/" class="md-nav__link">
         
   
   
@@ -528,6 +472,8 @@
                 
   
   
+    
+  
   
   
     
@@ -537,11 +483,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
@@ -557,7 +503,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             T24 & Banking
@@ -571,7 +517,7 @@
   
   
     <li class="md-nav__item">
-      <a href="knowledge/t24/t24-overview/" class="md-nav__link">
+      <a href="../t24-overview/" class="md-nav__link">
         
   
   
@@ -591,10 +537,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="knowledge/t24/svn-migration/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    SVN to Azure DevOps
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -605,6 +573,68 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#background" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Background
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step-migration-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Step-by-Step Migration Guide
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Step-by-Step Migration Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-clone-your-svn-repo-export-for-migration" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Clone Your SVN Repo (Export for Migration)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -675,7 +705,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cheatsheets/index.md" class="md-nav__link">
+      <a href="../../../cheatsheets/index.md" class="md-nav__link">
         
   
   
@@ -698,7 +728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cheatsheets/spring-boot.md" class="md-nav__link">
+      <a href="../../../cheatsheets/spring-boot.md" class="md-nav__link">
         
   
   
@@ -721,7 +751,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cheatsheets/azure-devops.md" class="md-nav__link">
+      <a href="../../../cheatsheets/azure-devops.md" class="md-nav__link">
         
   
   
@@ -794,7 +824,7 @@
   
   
     <li class="md-nav__item">
-      <a href="skills/" class="md-nav__link">
+      <a href="../../../skills/" class="md-nav__link">
         
   
   
@@ -867,7 +897,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projects/" class="md-nav__link">
+      <a href="../../../projects/" class="md-nav__link">
         
   
   
@@ -917,20 +947,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#about-me" class="md-nav__link">
+  <a href="#background" class="md-nav__link">
     <span class="md-ellipsis">
-      🧠 About Me
+      📌 Background
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#explore-my-work" class="md-nav__link">
+  <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      🔍 Explore My Work
+      🛠️ Prerequisites
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step-migration-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Step-by-Step Migration Guide
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Step-by-Step Migration Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-clone-your-svn-repo-export-for-migration" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Clone Your SVN Repo (Export for Migration)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -953,22 +1007,72 @@
   
 
 
-<h1 id="hello-im-jabeevulla">👋 Hello, I'm Jabeevulla</h1>
-<p><strong>Hands-on Software Engineer &amp; Architect</strong><br />
-💡 Specializing in Identity, Cloud, Microservices, and AI-Powered Architectures<br />
-📍 Based in London, working globally</p>
+<h1 id="migrating-t24-artefacts-from-svn-to-git-using-azure-devops">Migrating T24 Artefacts from SVN to Git using Azure DevOps</h1>
+<blockquote>
+<p>A hands-on guide for Temenos developers and DevOps teams modernizing source control workflows.</p>
+</blockquote>
 <hr />
-<h2 id="about-me">🧠 About Me</h2>
-<p>With 14+ years of experience, I lead and deliver digital transformation projects for banks and enterprises. I design secure, resilient architectures, drive IAM migrations, and explore AI agent integrations.</p>
+<h2 id="background">📌 Background</h2>
+<p>Many Temenos T24 environments have traditionally relied on <strong>SVN (Subversion)</strong> for source control of artefacts like TAFJ components, routines, and scripts. However, as enterprise development practices modernize, <strong>Git-based workflows</strong> with <strong>Azure DevOps</strong> offer a more robust, collaborative, and CI/CD-enabled approach.</p>
+<p>This blog guides you through the <strong>SVN to Git migration journey</strong>, with a focus on Temenos artefacts and Azure DevOps integration. It covers:
+- Git setup for T24 artefacts
+- Azure DevOps repository structure
+- CI/CD with cloud and on-prem agents
+- Boards and Test Plan integration</p>
 <hr />
-<h2 id="explore-my-work">🔍 Explore My Work</h2>
-<ul>
-<li>📚 <a href="knowledge/index.md">Knowledge Base</a></li>
-<li>🚀 <a href="projects/">Projects</a></li>
-<li>🧠 <a href="skills/">Skills Overview</a></li>
-</ul>
+<h2 id="prerequisites">🛠️ Prerequisites</h2>
+<p>Ensure you have the following ready before starting:</p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Purpose</th>
+<th>Download Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Azure CLI + DevOps Extension</td>
+<td>Manage Azure DevOps via CLI</td>
+<td><a href="https://learn.microsoft.com/en-us/cli/azure/install-azure-cli">Install Guide</a></td>
+</tr>
+<tr>
+<td>Git</td>
+<td>Distributed version control</td>
+<td><a href="https://git-scm.com/downloads">git-scm.com</a></td>
+</tr>
+<tr>
+<td>TortoiseSVN / SVN CLI</td>
+<td>Access old T24 SVN repository</td>
+<td><a href="https://tortoisesvn.net/">tortoisesvn.net</a></td>
+</tr>
+<tr>
+<td>Temenos Design Studio</td>
+<td>T24 artefact development</td>
+<td><a href="https://community.temenos.com/s/">Temenos Partner Portal</a></td>
+</tr>
+<tr>
+<td>Azure DevOps Agent (optional)</td>
+<td>Run pipelines locally or on-prem</td>
+<td><a href="https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows">Install Agent</a></td>
+</tr>
+<tr>
+<td>Azure DevOps Account</td>
+<td>Host Git repos, pipelines, boards</td>
+<td><a href="https://dev.azure.com">dev.azure.com</a></td>
+</tr>
+<tr>
+<td>Java SDK</td>
+<td>Compile Java-based TAFJ artefacts</td>
+<td>[]</td>
+</tr>
+</tbody>
+</table>
 <hr />
-<p>📄 <a href="resume/">View My Resume</a> | <a href="https://github.com/jabeevulla">GitHub</a> | <a href="https://linkedin.com/in/jabeevulla">LinkedIn</a></p>
+<h2 id="step-by-step-migration-guide">🚀 Step-by-Step Migration Guide</h2>
+<h3 id="1-clone-your-svn-repo-export-for-migration">1. Clone Your SVN Repo (Export for Migration)</h3>
+<p>```bash
+svn checkout https://your-svn-server/path/to/repo t24-svn-export</p>
 
 
 
@@ -1023,10 +1127,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.sections", "navigation.top", "navigation.instant", "search.suggest", "search.highlight"], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.sections", "navigation.top", "navigation.instant", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   </body>

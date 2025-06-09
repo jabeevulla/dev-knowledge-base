@@ -14,8 +14,23 @@ This section defines the **solution architecture** for SCM modernization, includ
 
 
 ---
+## 🗂️ 2. Azure DevOps Project Structure
 
-## 🗂️ 2. Repository Structure Strategy
+Azure DevOps will be structured to reflect logical application groupings, simplify access control, and improve traceability.
+
+#### Project Hierarchy
+
+| Project Name        | Description                                    |
+| ------------------- | ---------------------------------------------- |
+| `T24-Core`          | T24 routines, versions, templates, COB jobs    |
+| `T24-Integrations`  | MQ, OFS handlers, APIs, message mappings       |
+| `Channel-Apps`      | Internet/mobile banking, onboarding UI         |
+| `Enterprise-Shared` | Common utilities, libraries, templates         |
+| `DevOps-Automation` | CI/CD templates, pipeline logic, infra as code |
+
+---
+
+## 🗂️ 3. Repository Structure Strategy
 
 ### 🔹 Monorepo vs Multi-Repo
 
@@ -46,6 +61,45 @@ t24-core/
 ```
 
 > 📌 All artefacts (.b, .xml, COB, routines, templates) are grouped by domain under `domains/`.
+
+### 🔹 Git Repository Naming Conventions
+This document outlines recommended naming conventions for Git repositories as part of BACB’s SVN to Git migration strategy. The goal is to establish consistency, clarity, and future scalability in Azure DevOps.
+
+---
+
+#### General Naming Rules
+
+| Rule                         | Example                            |
+|------------------------------|-------------------------------------|
+| Use lowercase + hyphens      | `t24-core`, `t24-interfaces-api`    |
+| Reflect domain or capability | `loans-processing`, `payments-core` |
+| Avoid internal-only terms    | Use `core`, `api`, `integration` instead of `jbc`, `svcb` |
+| Keep names < 30 characters   | For clarity in Azure DevOps UI      |
+| Be consistent across teams   | Define a shared naming standard     |
+
+---
+
+#### Recommended Prefix Patterns
+
+| Repo Type              | Format                         | Examples                         |
+|------------------------|---------------------------------|----------------------------------|
+| T24 core monorepo      | `t24-core`                      | `t24-core`                       |
+| Domain-specific repo   | `t24-<domain>`                  | `t24-loans`, `t24-retail`        |
+| Interfaces & APIs      | `t24-<domain>-interfaces`       | `t24-loans-interfaces`           |
+| Shared utilities       | `shared-<purpose>`              | `shared-deploy-scripts`, `shared-config` |
+| Automation repo        | `automation-<purpose>`          | `automation-pipeline-templates`  |
+| Archived or legacy     | `legacy-<name>` (or move to tag)| `legacy-payments`                |
+
+---
+
+#### Mapping Example: SVN to Git
+
+| Old SVN Path                           | New Git Repo Name         | Notes                            |
+|----------------------------------------|---------------------------|----------------------------------|
+| `/svn/loans/core`                      | `t24-loans`               | Clean naming for domain          |
+| `/svn/temenos/all-code`               | `t24-core`                | Monorepo for structured layout   |
+| `/svn/infra-deployment-scripts`       | `shared-deploy-scripts`   | Utility repo                     |
+| `/svn/branch-2023-04-dev`             | _Not a repo_              | Use Git branch instead           |
 
 ---
 
